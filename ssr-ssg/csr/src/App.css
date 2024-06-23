@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+.user-list {
+  list-style: none;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.user-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.user-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.user-name {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.title {
+  text-align: center;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.item-link {
+  list-style-type: none;
+}
+
+.nav-links {
+  text-align: center;
+  padding: 20px;
+  font-size: 26px;
+  background-color: #6495ed;
+  margin: 0;
+}
