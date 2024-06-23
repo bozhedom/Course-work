@@ -1,0 +1,86 @@
+---
+import MyHeader from '../components/MyHeader.astro';
+import MyFooter from '../components/MyFooter.astro';
+import ReactCounter from '../components/ReactCounter.jsx';
+import UserList from '../components/UserList.jsx';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/contact.css">
+  </head>
+  <body>
+    <div class="page-container">
+			<MyHeader />
+
+			<div class="greedy">			
+				<h1>Welcome to Astro</h1>
+				<p>This is the homepage of my demo application.</p>
+			</div>
+
+
+			<div class="static">			
+				<h2>Static Content</h2>
+				<p>This content is rendered statically.</p>
+			</div>
+
+				<div class="counter">			
+				<h2>Interactive React Component</h2>
+				<ReactCounter client:idle />
+
+			</div>
+
+
+				<div class="api">			
+			<h2>Data Fetching Component</h2>
+			<UserList client:load />
+
+			</div>
+			<MyFooter />
+    </div>
+  </body>
+</html>
+
+<style>
+body {
+	margin: 0;
+}
+
+.page-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.greedy {
+	width: 100%;
+	text-align: center;
+	padding: 30px;
+}
+
+.static {
+	background-color: aliceblue;
+	width: 100%;
+	text-align: center;
+	padding: 30px;
+}
+
+.counter {
+	width: 100%;
+	text-align: center;
+	padding: 30px;
+}
+
+.api {
+	width: 100%;
+	text-align: center;
+	padding: 30px;
+	background-color: aliceblue;
+
+}
+</style>
