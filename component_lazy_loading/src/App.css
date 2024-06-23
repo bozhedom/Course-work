@@ -1,0 +1,80 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* src/components/GalleryPage.css */
+.gallery-page {
+  padding: 20px;
+}
+
+.photo-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photo-item {
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.photo-item img {
+  max-width: 100px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.photo-item p {
+  margin: 5px 0 0;
+}
