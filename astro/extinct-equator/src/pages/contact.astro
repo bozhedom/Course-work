@@ -1,0 +1,64 @@
+---
+import MyHeader from '../components/MyHeader.astro';
+import MyFooter from '../components/MyFooter.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/contact.css">
+  </head>
+  <body>
+    <div class="page-container">
+      <MyHeader />
+      <div class="  ">
+        <h1>Contact Us</h1>
+        <p>This is the contact page of my demo application.</p>
+      </div>
+      <MyFooter />
+    </div>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+  }
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+.content-wrap {
+  flex: 1;
+  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+</style>
